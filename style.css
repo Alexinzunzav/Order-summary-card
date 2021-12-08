@@ -1,0 +1,210 @@
+/* GENERAL STYLES   */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*   {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body    {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;   
+}
+
+.card   {
+    grid-column-start: 2;
+    width: 28rem;
+    height: auto;
+    display: grid;
+    grid-template-rows: 220px 1fr auto auto auto;
+    background-color: #fff;
+    border-radius: 1rem;   
+}
+
+.top-img    {
+    border-radius: 1rem 1rem 0 0 ;
+    width: 100%;
+}
+
+/* TEXT CONTENT */
+.text-content   {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.title  {
+    align-self: center;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.5rem;
+    padding: 3rem 0 1rem 0;
+}
+
+.text  {
+    text-align: center;
+    font-size: 1rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.parragraph {
+    padding: 0 3rem 1.5rem 3rem;
+}
+/* END OF TEXT CONTENT */
+
+/* PLAN CARD */
+.plan {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: left;
+    padding: 1.5rem;
+    margin: 0 3rem;
+    border-radius: .5rem;
+}
+
+.plan a {
+    align-self: center;
+    font-size: .9rem;
+    font-weight: 700;
+    position: relative;
+    left: 4.5rem;
+}
+
+.plan-text  {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.card-text   {
+    text-align: left;
+}
+                                 
+.music-icon {
+    width: 3rem;
+    height: 3rem;
+}
+/* END OF PLAN CARD */
+
+/* BTNS */
+.card-pay-btn   {
+    height: 3rem;
+    margin: 2rem 3rem;
+    border-style: none;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: .5rem;
+    color: #fff;
+    font-size: .9rem;
+    box-shadow:  -1px 22px 29px rgba(56, 40, 224, 0.3);
+}
+
+.card-cancel-btn    {
+    border-style: none;
+    background-color: transparent;
+    height: 1rem;
+    margin: 0 0 3rem 0;
+    color: hsl(224, 23%, 55%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+/* END OF BTNS */
+
+@media (min-width: 375px) and (max-width: 375px) {
+    body    {
+        width: 100%;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 20rem 1fr;
+       
+        place-items: center;
+        background-color: hsl(225, 100%, 94%);
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    .card   {
+        width: 20rem;
+        height: auto;
+        display: grid;
+        grid-template-rows: 10rem 1fr auto auto auto;
+        background-color: #fff;
+        border-radius: 1rem;
+    }
+
+    .top-img    {
+        border-radius: 1rem 1rem 0 0 ;
+        width: 20rem;
+        height: auto;
+    }
+
+    /* TEXT CONTENT */
+    .text-content   {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .title  {
+        align-self: center;
+        color: hsl(223, 47%, 23%);
+        font-size: 1.5rem;
+        padding:1.5rem 0 1rem 0;
+    }
+
+    .text  {
+        text-align: center;
+        font-size: 1rem;
+        color: hsl(224, 23%, 55%);
+    }
+
+    .parragraph {
+        padding: 0 2rem 1.5rem 2rem;
+    }
+    /* END OF TEXT CONTENT */
+    
+    /* PLAN CARD */
+    .plan {
+        display: flex;
+        flex-direction: row;
+        background-color: hsl(225, 100%, 98%);
+        justify-content: left;
+        padding: 1rem;
+        margin: 0 2rem;
+        border-radius: .8rem;
+    }
+
+    .plan a {
+        align-self: center;
+        font-size: .8rem;
+        font-weight: 700;
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .plan-text  {
+        align-self: center;
+    }
+
+    .plan-title {
+        font-size: .9rem;
+    }
+
+    .card-text   {
+        text-align: left;
+        font-size: .9rem;
+        padding-left: 0;
+    }
+                                    
+    .music-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+    /* END OF PLAN CARD */
+}
