@@ -70,12 +70,18 @@ body    {
     border-radius: .5rem;
 }
 
+.plan-title {
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: .3rem;
+}
+
 .plan a {
     align-self: center;
     font-size: .9rem;
     font-weight: 700;
     position: relative;
-    left: 4.5rem;
+    left: 5rem;
 }
 
 .plan-text  {
@@ -104,6 +110,7 @@ body    {
     border-radius: .5rem;
     color: #fff;
     font-size: .9rem;
+    font-weight: 700;
     box-shadow:  -1px 22px 29px rgba(56, 40, 224, 0.3);
 }
 
